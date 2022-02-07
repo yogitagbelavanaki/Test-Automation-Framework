@@ -32,14 +32,15 @@ public class BaseClass implements FrameworkConstants{
 
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			
+			driver=new ChromeDriver();
 			/*
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);
 			 */
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			
+
 			WebDriverManager.firefoxdriver().setup();
+			driver=new FirefoxDriver();
 			/*
 			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
 			 * Reporter.log("Successfully Launched Firefox Browser",true);
@@ -53,8 +54,8 @@ public class BaseClass implements FrameworkConstants{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		WebDriverWait explicitWait = new WebDriverWait(driver, 10);
 		PropertyFileReader fileReader=new PropertyFileReader();
-		
-		driver.get(fileReader.getValueProperty("URL"));
+        String URL=fileReader.getValueProperty("URL");
+		driver.get(URL);
 	}
 
 	@AfterClass(alwaysRun=true)
