@@ -14,7 +14,7 @@ public class Generic_Screenshots implements FrameworkConstants{
 	
 	public static void getPhoto(WebDriver driver) throws IOException {
 		
-		String photo=SCREENSHOT_PATH;
+		String photo=SCREENSHOT_PATH;			
 		Date date= new Date();
 		String ScreenShotDate=date.toString().replaceAll(":", "-");
 		TakesScreenshot takeScreenShot=(TakesScreenshot)driver;

@@ -12,11 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-/**
- * 
- * @author Yogita
- *
- */
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseClass implements FrameworkConstants{
 
@@ -25,17 +22,23 @@ public class BaseClass implements FrameworkConstants{
 
 	@Parameters("browser")
 	@BeforeClass(alwaysRun=true)
-	public void openApplication(@Optional("chrome")String browserName) {
+	public void openApplication(@Optional("chrome")String browserName) throws Throwable {
 
 
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty(CHROME_KEY,CHROME_PATH);
-			driver=new ChromeDriver();
-			Reporter.log("Successfully Launched Chrome Browser",true);
+			WebDriverManager.chromedriver().setup();
+			
+			/*
+			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
+			 * Reporter.log("Successfully Launched Chrome Browser",true);
+			 */
 		}else if(browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty(FIREFOX_KEY,FIREFOX_PATH);
-			driver=new FirefoxDriver();
-			Reporter.log("Successfully Launched Firefox Browser",true);
+			
+			WebDriverManager.firefoxdriver().setup();
+			/*
+			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
+			 * Reporter.log("Successfully Launched Firefox Browser",true);
+			 */
 		}else {
 			Reporter.log("Enter valid Browser name");
 		}
@@ -44,6 +47,9 @@ public class BaseClass implements FrameworkConstants{
 		Reporter.log("Browser window is maximized successfully",true);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		WebDriverWait explicitWait = new WebDriverWait(driver, 10);
+		PropertyFileReader fileReader=new PropertyFileReader();
+		
+		driver.get(fileReader.getValueProperty("URL"));
 	}
 
 	@AfterClass(alwaysRun=true)
