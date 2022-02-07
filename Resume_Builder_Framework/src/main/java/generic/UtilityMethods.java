@@ -47,6 +47,7 @@ public class UtilityMethods {
 		
 	}
 	
+	
 	/*
 	 * public static void switchToASpecificTitledWindow(String title) { String
 	 * parentWindowId = driver.getWindowHandle(); Set<String> allWindowIds =
