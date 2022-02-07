@@ -17,7 +17,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 /**
  * 
  * @author Yogita
- *
+ * This class has before and after annotations to open and close browser respectively.
+ * Along with URL to be launched and window maximize
  */
 
 public class BaseClass implements FrameworkConstants{
