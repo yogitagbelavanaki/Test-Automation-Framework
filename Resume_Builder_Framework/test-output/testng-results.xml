@@ -5,12 +5,12 @@
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-07T13:16:24 IST" name="Default suite" finished-at="2022-02-07T13:16:26 IST" duration-ms="2138">
+  <suite started-at="2022-02-07T15:12:35 IST" name="Default suite" finished-at="2022-02-07T15:12:49 IST" duration-ms="14083">
     <groups>
     </groups>
-    <test started-at="2022-02-07T13:16:24 IST" name="Default test" finished-at="2022-02-07T13:16:26 IST" duration-ms="2138">
+    <test started-at="2022-02-07T15:12:35 IST" name="Default test" finished-at="2022-02-07T15:12:49 IST" duration-ms="14083">
       <class name="test_scripts.SampleTestScript">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_scripts.SampleTestScript@581ac8a8]" started-at="2022-02-07T13:16:24 IST" name="openApplication" finished-at="2022-02-07T13:16:26 IST" duration-ms="1924" status="PASS">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_scripts.SampleTestScript@383bfa16]" started-at="2022-02-07T15:12:35 IST" name="openApplication" finished-at="2022-02-07T15:12:45 IST" duration-ms="10292" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="testCase()[pri:0, instance:test_scripts.SampleTestScript@581ac8a8]" started-at="2022-02-07T13:16:26 IST" name="testCase" finished-at="2022-02-07T13:16:26 IST" duration-ms="5" status="PASS">
+        <test-method signature="testCase(java.lang.String)[pri:0, instance:test_scripts.SampleTestScript@383bfa16]" started-at="2022-02-07T15:12:46 IST" name="testCase" data-provider="testData" finished-at="2022-02-07T15:12:49 IST" duration-ms="3120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yogita]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_scripts.SampleTestScript@581ac8a8]" started-at="2022-02-07T13:16:26 IST" name="CloseApp" finished-at="2022-02-07T13:16:26 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_scripts.SampleTestScript@383bfa16]" started-at="2022-02-07T15:12:49 IST" name="CloseApp" finished-at="2022-02-07T15:12:49 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
