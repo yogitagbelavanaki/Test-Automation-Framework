@@ -1,9 +1,19 @@
 package pom_scripts;
 
-public class SamplePOMScript {
-	
+import org.testng.annotations.Test;
+
+import generic.BaseClass;
+import generic.BaseTest;
+
+public class SamplePOMScript extends BaseClass{
+
 	public SamplePOMScript(){
-		
+
 	}
 
+	@Test
+	public void testCase01() {
+		BaseTest b = new BaseTest(driver);
+		b.clickProfile();
+	}
 }
