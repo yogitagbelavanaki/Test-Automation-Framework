@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class BaseTest {
+public class BaseTest extends UtilityMethods
+{
 	
 	public BaseTest(WebDriver driver)
 	{
@@ -15,12 +16,13 @@ public class BaseTest {
 	
 	@FindBy(xpath="//button[text()='Profile']")
 	static
+
 	WebElement Profile;
 	
 	
 
-	private static void clickAction(WebElement profile2) {
-		// TODO Auto-generated method stub
+	public static void clickProfile()
+	{
 		clickAction(Profile);
 	}
 

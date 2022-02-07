@@ -14,6 +14,8 @@ import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseClass implements FrameworkConstants{
 
