@@ -15,10 +15,7 @@ public class ProfilePage
 	@FindBy(xpath = "(//select[@name=\"dropdown\"])[1]")
 	WebElement heighestEducation;
 	
-	public void click
 	
-	@FindBy(xpath = "(//option[@value=\"0\"])[1]")
-	WebElement beBtech;
 	
 	
 }
