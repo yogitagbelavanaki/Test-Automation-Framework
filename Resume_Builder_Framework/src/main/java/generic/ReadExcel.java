@@ -39,14 +39,14 @@ public class ReadExcel implements FrameworkConstants{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		int phyRowCount = workbook.getSheet(sheetName).getPhysicalNumberOfRows();
+		int phyRowCount = workbook.getSheet(sheetName).getPhysicalNumberOfRows();//-1
 		int phyCellCount = workbook.getSheet(sheetName).getRow(0).getPhysicalNumberOfCells();
 
-		String[][] stringValue = new String[phyRowCount][phyCellCount];
-
-		for(int i=0;i<phyRowCount;i++) {			
-			for(int j=0;j<phyCellCount;j++) {				
-				stringValue[i][j]=workbook.getSheet(sheetName).getRow(i).getCell(j).getStringCellValue();
+		String[][] stringValue = new String[phyRowCount-1][phyCellCount];
+		//-i=1
+		for(int i=1;i<=phyRowCount-1;i++) {			
+			for(int j=0;j<=phyCellCount-1;j++) {				
+				stringValue[i-1][j]=workbook.getSheet(sheetName).getRow(i).getCell(j).getStringCellValue();
 			}
 		}		
 		return stringValue;

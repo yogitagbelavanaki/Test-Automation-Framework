@@ -32,7 +32,7 @@ public class BaseClass implements FrameworkConstants{
 
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			
+			driver = new ChromeDriver();
 			/*
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);
@@ -40,6 +40,7 @@ public class BaseClass implements FrameworkConstants{
 		}else if(browserName.equalsIgnoreCase("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 			/*
 			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
 			 * Reporter.log("Successfully Launched Firefox Browser",true);

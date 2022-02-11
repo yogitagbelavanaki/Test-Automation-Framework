@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[Browser window is maximized successfully]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8531" started-at="2022-02-07T13:15:07 IST" finished-at="2022-02-07T13:15:16 IST">
+  <suite name="Default suite" duration-ms="15679" started-at="2022-02-11T13:09:35 IST" finished-at="2022-02-11T13:09:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8531" started-at="2022-02-07T13:15:07 IST" finished-at="2022-02-07T13:15:16 IST">
-      <class name="pom_scripts.SamplePOMScript">
-        <test-method status="FAIL" signature="openApplication(java.lang.String)[pri:0, instance:pom_scripts.SamplePOMScript@cb51256]" name="openApplication" is-config="true" duration-ms="8408" started-at="2022-02-07T13:15:07 IST" finished-at="2022-02-07T13:15:15 IST">
+    <test name="Default test" duration-ms="15679" started-at="2022-02-11T13:09:35 IST" finished-at="2022-02-11T13:09:50 IST">
+      <class name="test_scripts.EndToEndTestCase">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:test_scripts.EndToEndTestCase@7a3d45bd]" name="openApplication" is-config="true" duration-ms="5605" started-at="2022-02-11T13:09:35 IST" finished-at="2022-02-11T13:09:40 IST">
           <params>
             <param index="0">
               <value>
@@ -15,57 +18,58 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at generic.BaseClass.openApplication(BaseClass.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
+            <line>
+              <![CDATA[Browser window is maximized successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="SKIP" signature="testCase01()[pri:0, instance:pom_scripts.SamplePOMScript@cb51256]" name="testCase01" duration-ms="0" started-at="2022-02-07T13:15:16 IST" finished-at="2022-02-07T13:15:16 IST">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="testCase1(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_scripts.EndToEndTestCase@7a3d45bd]" name="testCase1" duration-ms="8042" started-at="2022-02-11T13:09:41 IST" data-provider="TestData1" finished-at="2022-02-11T13:09:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kiran]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[summary is mandatory]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "li"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TYC0921353', ip: '10.10.25.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at generic.BaseClass.openApplication(BaseClass.java:51)
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "li"
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TYC0921353', ip: '10.10.25.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:48)
+at generic.UtilityMethods.select_classObject(UtilityMethods.java:37)
+at pom_scripts.EndToEnd1POM.skillsElement1(EndToEnd1POM.java:107)
+at test_scripts.EndToEndTestCase.testCase1(EndToEndTestCase.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
@@ -84,48 +88,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method status="FAIL" signature="CloseApp()[pri:0, instance:pom_scripts.SamplePOMScript@cb51256]" name="CloseApp" is-config="true" duration-ms="1" started-at="2022-02-07T13:15:16 IST" finished-at="2022-02-07T13:15:16 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at generic.BaseClass.CloseApp(BaseClass.java:62)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="CloseApp()[pri:0, instance:test_scripts.EndToEndTestCase@7a3d45bd]" name="CloseApp" is-config="true" duration-ms="800" started-at="2022-02-11T13:09:50 IST" finished-at="2022-02-11T13:09:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-      </class> <!-- pom_scripts.SamplePOMScript -->
+      </class> <!-- test_scripts.EndToEndTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
