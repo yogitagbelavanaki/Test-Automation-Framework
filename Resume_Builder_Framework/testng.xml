@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test" parallel="classes">
+  <groups>
+  <run>
+  <exclude name="End_To_End">
+  </exclude>
+  </run>
+  </groups>
+    <classes>
+      <class name="test_scripts.TC_Skill_13"/>
+      <class name="test_scripts.SampleTestScript"/>
+      <class name="test_scripts.TC_Education_002"/>
+      <class name="test_scripts.TC_Education_03"/>
+      <class name="test_scripts.TC_Profile_08"/>
+      <class name="test_scripts.TC_Education_05"/>
+      <class name="test_scripts.TC_Profile_09"/>
+      <class name="test_scripts.TC_Education_04"/>
+      <class name="test_scripts.TC_Education_07"/>
+      <class name="test_scripts.TC_Profile_10"/>
+      <class name="test_scripts.TC_Profile_11"/>
+      <class name="test_scripts.TC_Profile_12"/>
+      <class name="test_scripts.TC_Skill_15"/>
+      <class name="test_scripts.TC_Skill_14"/>
+      <class name="test_scripts.TC_End_to_End"/>
+      <class name="test_scripts.TC_Eductaion_06"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

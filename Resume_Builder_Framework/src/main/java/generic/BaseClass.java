@@ -30,21 +30,27 @@ public class BaseClass implements FrameworkConstants{
 	public void openApplication(@Optional("chrome")String browserName) throws Throwable {
 
 
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.equalsIgnoreCase("chrome"))
+		{
 			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
 			
 			/*
 			 * System.setProperty(CHROME_KEY,CHROME_PATH); driver=new ChromeDriver();
 			 * Reporter.log("Successfully Launched Chrome Browser",true);
 			 */
-		}else if(browserName.equalsIgnoreCase("firefox")) {
+		}
+		else if(browserName.equalsIgnoreCase("firefox"))
+		{
 			
 			WebDriverManager.firefoxdriver().setup();
 			/*
 			 * System.setProperty(FIREFOX_KEY,FIREFOX_PATH); driver=new FirefoxDriver();
 			 * Reporter.log("Successfully Launched Firefox Browser",true);
 			 */
-		}else {
+		}
+		else
+		{
 			Reporter.log("Enter valid Browser name");
 		}
 
@@ -61,5 +67,6 @@ public class BaseClass implements FrameworkConstants{
 	public void CloseApp() {
 		driver.quit();
 	}
+
 
 }

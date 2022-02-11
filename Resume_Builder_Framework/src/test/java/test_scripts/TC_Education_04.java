@@ -6,16 +6,15 @@ import generic.BaseClass;
 import pom_scripts.EducationPage;
 import pom_scripts.HomePage;
 
-public class TC_Education_002 extends BaseClass
+public class TC_Education_04 extends BaseClass 
 {
-	@Test(groups=("Functional_TestCase"))
-	public void testCase() 
-	{
-		HomePage page=new HomePage(driver);
+   @Test(groups=("Functional_TestCase"))
+   public void testcase()
+   {
+	   HomePage page=new HomePage(driver);
 		page.ClickOnEducation();
 		
 		EducationPage edu=new EducationPage(driver);
-		edu.clickOnHeighestEducation();	
-		
-	}
+		edu.clickonSecialization();
+   }
 }
