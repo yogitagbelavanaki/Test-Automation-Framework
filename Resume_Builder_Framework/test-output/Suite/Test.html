@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 09 13:01:54 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>57 seconds (57540 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_scripts.Functional_01.functional_01()'><b>functional_01</b><br>Test class: test_scripts.Functional_01</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_01@f0da945</td></tr>
+<tr>
+<td title='test_scripts.Functional_10.functional_10()'><b>functional_10</b><br>Test class: test_scripts.Functional_10<br>Parameters: suraj1234</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_10@17497425</td></tr>
+<tr>
+<td title='test_scripts.Integration01.integration01()'><b>integration01</b><br>Test class: test_scripts.Integration01</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Integration01@31fa1761</td></tr>
+<tr>
+<td title='test_scripts.Functional_08.functional_08()'><b>functional_08</b><br>Test class: test_scripts.Functional_08</td>
+<td></td>
+<td>2</td>
+<td>test_scripts.Functional_08@3c7f66c4</td></tr>
+<tr>
+<td title='test_scripts.Functional_10.functional_10()'><b>functional_10</b><br>Test class: test_scripts.Functional_10<br>Parameters: abhi1234</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_10@17497425</td></tr>
+<tr>
+<td title='test_scripts.Functional_03.functional_03()'><b>functional_03</b><br>Test class: test_scripts.Functional_03<br>Parameters: Abhishek</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_03@316bcf94</td></tr>
+<tr>
+<td title='test_scripts.Functional_04.functional_04()'><b>functional_04</b><br>Test class: test_scripts.Functional_04<br>Parameters: jnviawivnawnvw</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_04@3e11f9e9</td></tr>
+<tr>
+<td title='test_scripts.Functional_05.functional_05()'><b>functional_05</b><br>Test class: test_scripts.Functional_05</td>
+<td></td>
+<td>2</td>
+<td>test_scripts.Functional_05@7c711375</td></tr>
+<tr>
+<td title='test_scripts.Functional_09.functional_09()'><b>functional_09</b><br>Test class: test_scripts.Functional_09<br>Parameters: 85</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_09@194bcebf</td></tr>
+<tr>
+<td title='test_scripts.EndToEnd01.endToEnd01()'><b>endToEnd01</b><br>Test class: test_scripts.EndToEnd01</td>
+<td></td>
+<td>1</td>
+<td>test_scripts.EndToEnd01@32502377</td></tr>
+<tr>
+<td title='test_scripts.Integration02.integration02()'><b>integration02</b><br>Test class: test_scripts.Integration02</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Integration02@957e06</td></tr>
+<tr>
+<td title='test_scripts.Functional_07.functional_07()'><b>functional_07</b><br>Test class: test_scripts.Functional_07<br>Parameters: 2745752285257</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_07@3a44431a</td></tr>
+<tr>
+<td title='test_scripts.Integration04.integration04()'><b>integration04</b><br>Test class: test_scripts.Integration04</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Integration04@729d991e</td></tr>
+<tr>
+<td title='test_scripts.Integration03.integration03()'><b>integration03</b><br>Test class: test_scripts.Integration03</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Integration03@1de5f259</td></tr>
+<tr>
+<td title='test_scripts.Functional_10.functional_10()'><b>functional_10</b><br>Test class: test_scripts.Functional_10<br>Parameters: sachin1234</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_10@17497425</td></tr>
+<tr>
+<td title='test_scripts.Functional_03.functional_03()'><b>functional_03</b><br>Test class: test_scripts.Functional_03<br>Parameters: Sachin</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_03@316bcf94</td></tr>
+<tr>
+<td title='test_scripts.Functional_02.functional_02()'><b>functional_02</b><br>Test class: test_scripts.Functional_02</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_02@53ce1329</td></tr>
+<tr>
+<td title='test_scripts.Functional_06.functional_06()'><b>functional_06</b><br>Test class: test_scripts.Functional_06</td>
+<td></td>
+<td>4</td>
+<td>test_scripts.Functional_06@2ea41516</td></tr>
+<tr>
+<td title='test_scripts.Functional_03.functional_03()'><b>functional_03</b><br>Test class: test_scripts.Functional_03<br>Parameters: Suraj</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_03@316bcf94</td></tr>
+<tr>
+<td title='test_scripts.Integration05.integration05()'><b>integration05</b><br>Test class: test_scripts.Integration05</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Integration05@6404f418</td></tr>
+<tr>
+<td title='test_scripts.Functional_07.functional_07()'><b>functional_07</b><br>Test class: test_scripts.Functional_07<br>Parameters: 47374913748137589</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_07@3a44431a</td></tr>
+<tr>
+<td title='test_scripts.Functional_04.functional_04()'><b>functional_04</b><br>Test class: test_scripts.Functional_04<br>Parameters: dfjwfnjjdnvjndv</td>
+<td></td>
+<td>0</td>
+<td>test_scripts.Functional_04@3e11f9e9</td></tr>
+</table><p>
+</body>
+</html>

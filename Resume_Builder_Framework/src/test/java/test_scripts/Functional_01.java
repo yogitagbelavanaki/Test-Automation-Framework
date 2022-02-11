@@ -10,7 +10,7 @@ public class Functional_01 extends BaseClass {
 	
 	@Test(groups = "Functional_TestCase")
 	public void functional_01() {
-		HomePage home_page = new HomePage();
+		HomePage home_page = new HomePage(driver);
 		Assert.assertTrue(home_page.profile_module.isEnabled());
 	}
 

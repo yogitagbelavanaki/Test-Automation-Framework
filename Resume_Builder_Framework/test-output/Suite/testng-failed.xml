@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="test_scripts.Integration01">
+        <methods>
+          <include name="integration01"/>
+          <include name="CloseApp"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Integration01 -->
+      <class name="test_scripts.Integration04">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="integration04"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Integration04 -->
+      <class name="test_scripts.Functional_05">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_05"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_05 -->
+      <class name="test_scripts.Functional_06">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_06"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_06 -->
+      <class name="test_scripts.Functional_08">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_08"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_08 -->
+      <class name="test_scripts.Integration05">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="integration05"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Integration05 -->
+      <class name="test_scripts.Functional_04">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_04"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_04 -->
+      <class name="test_scripts.Integration02">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="integration02"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Integration02 -->
+      <class name="test_scripts.EndToEnd01">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="endToEnd01"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.EndToEnd01 -->
+      <class name="test_scripts.Functional_01">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_01"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_01 -->
+      <class name="test_scripts.Functional_03">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_03"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_03 -->
+      <class name="test_scripts.Functional_07">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_07"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_07 -->
+      <class name="test_scripts.Functional_02">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_02"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_02 -->
+      <class name="test_scripts.Functional_10">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_10"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_10 -->
+      <class name="test_scripts.Functional_09">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="functional_09"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Functional_09 -->
+      <class name="test_scripts.Integration03">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="integration03"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.Integration03 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

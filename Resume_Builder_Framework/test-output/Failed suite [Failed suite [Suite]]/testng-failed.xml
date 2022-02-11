@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Suite]]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)(failed)(failed)">
+    <groups>
+      <run>
+        <exclude name="Functional_TestCase"/>
+        <exclude name="Integration_TestCase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test_scripts.EndToEnd01">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="endToEnd01"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test_scripts.EndToEnd01 -->
+    </classes>
+  </test> <!-- Test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
