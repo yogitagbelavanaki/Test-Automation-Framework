@@ -5,17 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-
-/**
- * 
- * @author Yogita
- *
- */
-public class UtilityMethods {
-	
-	public static WebDriver driver;	
-	
-	public static void get_title() {
+public class UtilityMethods 
+{
+		
+	public static WebDriver driver;
+	public static void get_title() 
+	{
 		String title= driver.getTitle();
 		System.out.println(title);
 	}
@@ -33,7 +28,8 @@ public class UtilityMethods {
 		TextField.sendKeys(value);
 	}
 	
-	public static Select select_classObject(WebElement DropDown){		
+	public static Select select_classObject(WebElement DropDown)
+	{		
 		Select select= new Select(DropDown);		
 		return select;		
 	}
@@ -44,6 +40,12 @@ public class UtilityMethods {
 		
 		
 	}
+
+	
+
+	
+
+	
 	
 	
 	/*

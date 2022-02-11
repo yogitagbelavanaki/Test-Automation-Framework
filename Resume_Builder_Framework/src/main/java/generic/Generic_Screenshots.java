@@ -24,3 +24,6 @@ public class Generic_Screenshots implements FrameworkConstants{
 	}
 
 }
+
+
+
